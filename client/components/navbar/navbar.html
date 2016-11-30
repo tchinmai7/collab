@@ -1,8 +1,5 @@
 <div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
   <div class="container">
-    <div class="akamai-logo">
-        <img src="Akamai_Technologies,_Inc._Logo.png" alt="Akamai">
-    </div>
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
         <span class="sr-only">Toggle navigation</span>
@@ -14,7 +11,10 @@
     </div>
     <div collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ng-class="{active: isActive(item.link())}" ng-show="item.show()">
+          <li>        <a class="navbar-brand" href="#">
+           <img src="assets/images/akamai.png" alt="Akamai">
+          </a></li>
+          <li ng-repeat="item in nav.menu" ng-class="{active: isActive(item.link())}" ng-show="item.show()">
             <a ng-href="{{item.link()}}">{{item.title}}</a>
         </li>
       </ul>
