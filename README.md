@@ -1,23 +1,3 @@
-# PaizaQA
-
-PaizaQA is a Open Source QA service(like StackOverflow) using MEAN stack.
-
-This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.3.0.
-
-## Blog article
-The following blog article explains how to build the QA service using MEAN stack.
-
-English: [Building a QA web service in an hour - MEAN stack development(3)](http://engineering.paiza.io/entry/2016/03/10/115345)
-
-Japanese: [Webサービスを作りたい人に最適、たった1時間でJSベースのQAサイトを作る方法 - MEANスタック開発(3)](http://paiza.hatenablog.com/entry/meanstack_howto_3)
-
-
-
-## Demo
-[http://collab.herokuapp.com](http://collab.herokuapp.com)
-
-
-## Getting Started
 
 ### Prerequisites
 
