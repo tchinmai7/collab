@@ -15,6 +15,10 @@
       <!-- bower:css -->
       <link rel="stylesheet" href="bower_components/angular-pagedown/angular-pagedown.css" />
       <link rel="stylesheet" href="bower_components/ng-tags-input/ng-tags-input.css" />
+<!--
+      <link rel="stylesheet" href="path/to/ng-tags-input.min.css">     
+      <link rel="stylesheet" href="path/to/ng-tags-input.bootstrap.min.css">
+    -->
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
@@ -66,10 +70,10 @@
     <!-- build:js(.tmp) app/app.js -->
       <script src="app/app.js"></script>
       <!-- injector:js -->
-      <script src="components/auth/auth.module.js"></script>
       <script src="app/admin/admin.module.js"></script>
+      <script src="components/auth/auth.module.js"></script>
       <script src="components/util/util.module.js"></script>
-      <script src="app/account/signup/signup.controller.js"></script>
+      <script src="app/questionsIndex/questionsIndex.js"></script>
       <script src="app/admin/admin.controller.js"></script>
       <script src="app/account/account.js"></script>
       <script src="app/admin/admin.router.js"></script>
@@ -77,11 +81,16 @@
       <script src="app/fromNow/fromNow.filter.js"></script>
       <script src="app/questionsCreate/questionsCreate.controller.js"></script>
       <script src="app/questionsCreate/questionsCreate.js"></script>
+      <script src="app/questionsIndex/client/bower_components/angular/angular.js"></script>
+      <script src="app/questionsIndex/client/bower_components/angular/angular.min.js"></script>
+      <script src="app/questionsIndex/client/bower_components/angular/index.js"></script>
+      <script src="app/questionsIndex/client/bower_components/ng-tags-input/ng-tags-input.js"></script>
+      <script src="app/questionsIndex/client/bower_components/ng-tags-input/ng-tags-input.min.js"></script>
       <script src="app/questionsIndex/questionsIndex.controller.js"></script>
-      <script src="app/questionsIndex/questionsIndex.js"></script>
+      <script src="app/account/login/login.controller.js"></script>
       <script src="app/questionsShow/questionsShow.controller.js"></script>
       <script src="app/questionsShow/questionsShow.js"></script>
-      <script src="app/account/login/login.controller.js"></script>
+      <script src="app/account/settings/settings.controller.js"></script>
       <script src="components/auth/auth.service.js"></script>
       <script src="components/auth/interceptor.service.js"></script>
       <script src="components/auth/router.decorator.js"></script>
@@ -94,7 +103,7 @@
       <script src="components/oauth-buttons/oauth-buttons.controller.js"></script>
       <script src="components/oauth-buttons/oauth-buttons.directive.js"></script>
       <script src="components/socket/socket.service.js"></script>
-      <script src="app/account/settings/settings.controller.js"></script>
+      <script src="app/account/signup/signup.controller.js"></script>
       <script src="components/util/util.service.js"></script>
       <!-- endinjector -->
     <!-- endbuild -->

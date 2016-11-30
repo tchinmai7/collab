@@ -14,7 +14,8 @@ describe('User API:', function() {
         name: 'Fake User',
         email: 'test@example.com',
         password: 'password'
-      });
+        tags: 'hydra,chimera'
+    });
 
       return user.saveAsync();
     });

@@ -38,9 +38,9 @@ Thing.find({}).removeAsync()
              'and openshift subgenerators'
     });
   });
-
-User.find({}).removeAsync()
-  .then(() => {
+/*
+User.find({})
+ .removeAsync() .then(() => {
     User.createAsync({
       provider: 'local',
       name: 'Test User',
@@ -57,3 +57,4 @@ User.find({}).removeAsync()
       console.log('finished populating users');
     });
   });
+*/

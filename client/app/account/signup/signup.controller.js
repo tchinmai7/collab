@@ -20,7 +20,8 @@ class SignupController {
         name: this.user.name,
         email: this.user.email,
         password: this.user.password
-      })
+        tags: this.user.tags
+  })
       .then(() => {
         // Account created, redirect to home
         this.$state.go('main');
