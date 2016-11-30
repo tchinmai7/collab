@@ -11,7 +11,31 @@ class SignupController {
     this.Auth = Auth;
     this.$state = $state;
   }
+  $scope.tags =  [
+  { "text":"hydra" },
+  { "text":"chimera" },
+  { "text":"ats" },
+  { "text":"trafficserver" },
+  { "text":"lbctrld" },
+  { "text":"cfr" },
+  { "text":"sahara" },
+  { "text":"nevada" },
+  { "text":"iptables" },
+  { "text":"nat" },
+  { "text":"rawsocket" },
+  { "text":"kernel" },
+  { "text":"apprep" },
+  { "text":"healthmon" },
+  { "text":"wccp" },
+  { "text":"dpdk" }
 
+  ];
+  $scope.loadTags = function(query) {
+      return $http.get('/tags?query=' + query).then(function(response) {
+                            console.log(response);
+                                              return response;
+  });
+      }
   register(form) {
     this.submitted = true;
 

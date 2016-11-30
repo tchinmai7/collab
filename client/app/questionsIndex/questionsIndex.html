@@ -39,9 +39,10 @@
           </div>
           <div>
             <span ng-repeat="tag in question.tags">
-              <span class="label label-info">
+                <a href="/?keyword={{tag.text}}" >
+                <span class="label label-info">
                 {{tag.text}}
-              </span>
+        </span> </a>
               &nbsp;
             </span>
           </div>
